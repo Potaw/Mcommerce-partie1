@@ -88,7 +88,6 @@ public class ProductController {
     }
 
     // Calculer la marge du produit
-    @ApiOperation(value = "Calcule la marge du produit")
     @GetMapping(value = "/AdminProduits")
     public HashMap<Product, Integer> adminProduits() {
         HashMap<Product, Integer> retour = new HashMap<Product, Integer>();
@@ -98,4 +97,8 @@ public class ProductController {
         return retour;
     }
 
+    @GetMapping(value = "/trierProduitsParOrdreAlphabetique" )
+    public List<Product> trierProduitsParOrdreAlphabetique() {
+        return productDao.findAllByOrderByNomAsc();
+    }
 }
