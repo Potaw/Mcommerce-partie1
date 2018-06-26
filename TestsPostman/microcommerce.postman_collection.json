@@ -6,6 +6,26 @@
 	},
 	"item": [
 		{
+			"name": "Affichage de la marge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9090/AdminProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Liste des produits",
 			"request": {
 				"method": "GET",

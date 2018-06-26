@@ -1,8 +1,8 @@
 {
-	"id": "66a00f63-ea10-40d4-a0d0-d900ce8ff0ce",
+	"id": "af60d71c-2995-4429-8dba-9fc0f5b900e1",
 	"name": "microcommerce",
 	"allTests": [],
-	"timestamp": "2018-06-26T14:10:12.992Z",
+	"timestamp": "2018-06-26T14:26:30.736Z",
 	"collection_id": "d8803ddd-1439-4267-add0-b2041ef0f61e",
 	"folder_id": 0,
 	"target_type": "collection",
@@ -39,6 +39,7 @@
 		],
 		"variables": [],
 		"order": [
+			"7888a0fa-5d0e-4783-9d8f-96392c495671",
 			"cb214cf0-94af-4f49-b6cd-7a1faafc65de",
 			"98e43b1b-21a9-4de5-9857-0fe27b3c919e",
 			"a5c66e71-55ca-4675-9ace-55999aa85b8a",
@@ -59,6 +60,30 @@
 	"globals": [],
 	"results": [
 		{
+			"name": "Affichage de la marge",
+			"id": "7888a0fa-5d0e-4783-9d8f-96392c495671",
+			"url": "http://localhost:9090/AdminProduits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"152"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "152",
+			"totalRequestTime": "152",
+			"iterationResults": {}
+		},
+		{
 			"name": "Liste des produits",
 			"id": "cb214cf0-94af-4f49-b6cd-7a1faafc65de",
 			"url": "http://localhost:9090/Produits",
@@ -73,13 +98,13 @@
 			},
 			"testPassFailCounts": {},
 			"times": [
-				"27"
+				"25"
 			],
 			"allTests": [
 				{}
 			],
-			"time": "27",
-			"totalRequestTime": "27",
+			"time": "25",
+			"totalRequestTime": "25",
 			"iterationResults": {}
 		},
 		{
@@ -97,13 +122,13 @@
 			},
 			"testPassFailCounts": {},
 			"times": [
-				"87"
+				"79"
 			],
 			"allTests": [
 				{}
 			],
-			"time": "87",
-			"totalRequestTime": "87",
+			"time": "79",
+			"totalRequestTime": "79",
 			"iterationResults": {}
 		},
 		{
@@ -121,13 +146,13 @@
 			},
 			"testPassFailCounts": {},
 			"times": [
-				"26"
+				"20"
 			],
 			"allTests": [
 				{}
 			],
-			"time": "26",
-			"totalRequestTime": "26",
+			"time": "20",
+			"totalRequestTime": "20",
 			"iterationResults": {}
 		},
 		{
@@ -145,13 +170,13 @@
 			},
 			"testPassFailCounts": {},
 			"times": [
-				"21"
+				"18"
 			],
 			"allTests": [
 				{}
 			],
-			"time": "21",
-			"totalRequestTime": "21",
+			"time": "18",
+			"totalRequestTime": "18",
 			"iterationResults": {}
 		},
 		{
@@ -193,26 +218,41 @@
 			},
 			"testPassFailCounts": {},
 			"times": [
-				"17"
+				"18"
 			],
 			"allTests": [
 				{}
 			],
-			"time": "17",
-			"totalRequestTime": "17",
+			"time": "18",
+			"totalRequestTime": "18",
 			"iterationResults": {}
 		}
 	],
 	"totalPass": 0,
 	"totalFail": 0,
-	"totalTime": 185,
+	"totalTime": 319,
 	"lifecycle": "done",
 	"requests": [
+		{
+			"name": "Affichage de la marge",
+			"id": "7888a0fa-5d0e-4783-9d8f-96392c495671",
+			"url": "http://localhost:9090/AdminProduits",
+			"time": "2018-06-26T14:26:30.736Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
 		{
 			"name": "Liste des produits",
 			"id": "cb214cf0-94af-4f49-b6cd-7a1faafc65de",
 			"url": "http://localhost:9090/Produits",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 200,
 				"name": "OK",
@@ -227,7 +267,7 @@
 			"name": "Création produit - prix OK",
 			"id": "98e43b1b-21a9-4de5-9857-0fe27b3c919e",
 			"url": "http://localhost:9090/Produits",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 201,
 				"name": "Created",
@@ -242,7 +282,7 @@
 			"name": "Création produit - prix KO",
 			"id": "a5c66e71-55ca-4675-9ace-55999aa85b8a",
 			"url": "http://localhost:9090/Produits",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 400,
 				"name": "Bad Request",
@@ -257,7 +297,7 @@
 			"name": "Màj produit - prix OK",
 			"id": "424d2963-68f8-4998-9a01-fee073da6e2d",
 			"url": "http://localhost:9090/Produits",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 200,
 				"name": "OK",
@@ -272,7 +312,7 @@
 			"name": "Màj produit - prix KO",
 			"id": "023a2804-bad8-4ba0-82cf-7a6c5a367933",
 			"url": "http://localhost:9090/Produits",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 400,
 				"name": "Bad Request",
@@ -287,7 +327,7 @@
 			"name": "Tier produits ordre alpha",
 			"id": "a0c5c77b-fe4b-4e72-b292-3b18150cdea1",
 			"url": "http://localhost:9090/trierProduitsParOrdreAlphabetique",
-			"time": "2018-06-26T14:10:12.992Z",
+			"time": "2018-06-26T14:26:30.736Z",
 			"responseCode": {
 				"code": 200,
 				"name": "OK",
