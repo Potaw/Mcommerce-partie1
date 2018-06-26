@@ -1,6 +1,6 @@
 package com.ecommerce.microcommerce.model;
 
-import com.fasterxml.jackson.annotation.JsonFilter;
+import com.ecommerce.microcommerce.web.exceptions.ProduitGratuitException;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -76,5 +76,11 @@ public class Product {
                 ", nom='" + nom + '\'' +
                 ", prix=" + prix +
                 '}';
+    }
+
+    public void testPrixAchatValid() {
+        if (this.prixAchat == 0 )
+            throw new ProduitGratuitException("le produit a un prix de vente à 0");
+        //return this.prixAchat == 0;
     }
 }

@@ -58,6 +58,7 @@ public class ProductController {
     //ajouter un produit
     @PostMapping(value = "/Produits")
     public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
+        product.testPrixAchatValid();
         Product productAdded =  productDao.save(product);
         if (productAdded == null)
             return ResponseEntity.noContent().build();
@@ -78,6 +79,7 @@ public class ProductController {
 
     @PutMapping (value = "/Produits")
     public void updateProduit(@RequestBody Product product) {
+        product.testPrixAchatValid();
         productDao.save(product);
     }
 
